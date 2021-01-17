@@ -1,0 +1,560 @@
+@charset "UTF-8";
+* {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+html, body {
+  height: 100%; }
+
+@media (min-width: 781px) {
+  .sp-only {
+    display: none; } }
+header {
+  max-width: 100vw; }
+  header .header-text {
+    position: fixed;
+    z-index: 10;
+    font-family: しねきゃぷしょん;
+    font-style: oblique;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 7vw;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    header .header-text .header-logo {
+      display: flex;
+      align-items: center;
+      margin-left: 50px; }
+      header .header-text .header-logo h1 {
+        font-size: 2.5vw; }
+    header .header-text .header-list {
+      display: flex;
+      align-items: center; }
+      header .header-text .header-list ul {
+        display: flex;
+        margin-right: 2vw; }
+        header .header-text .header-list ul a {
+          color: #000; }
+        header .header-text .header-list ul a:hover {
+          color: #fff; }
+        header .header-text .header-list ul li {
+          margin-right: 3vw; }
+      header .header-text .header-list .sns {
+        margin-right: 4vw; }
+        header .header-text .header-list .sns .twitter {
+          margin-right: 2vw; }
+  header .head-text {
+    margin-left: 40px;
+    background-color: #333; }
+    header .head-text h1 {
+      font-family: Noto Sans CJK JP;
+      font-size: 3vw;
+      font-style: oblique;
+      color: #fff;
+      margin-left: 16px; }
+  header .header-image {
+    background: url(../images/top.png);
+    height: 52vw;
+    background-size: cover;
+    display: flex;
+    align-items: center; }
+
+main .line-up {
+  text-align: center;
+  font-family: Noto Sans CJK JP;
+  margin: 80px 0; }
+  main .line-up h2 {
+    font-size: 25px; }
+  main .line-up p {
+    color: #0c1f71; }
+main .contents .side-job {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  background-color: #f3f4f6;
+  padding-bottom: 50px; }
+  main .contents .side-job .big-contents {
+    width: 60%;
+    display: flex;
+    height: 400px;
+    align-items: center;
+    background: url("../images/picture.png");
+    background-size: cover; }
+    main .contents .side-job .big-contents .side-job-text {
+      background-color: #1e3bb8;
+      color: #fff;
+      width: 37%; }
+      main .contents .side-job .big-contents .side-job-text h1 {
+        font-size: 6vw;
+        font-family: Bradley Hand;
+        text-align: center;
+        font-style: oblique; }
+  main .contents .side-job .small-contents {
+    margin-bottom: 50px;
+    background-color: #fff;
+    width: 35%;
+    margin: 0 auto; }
+    main .contents .side-job .small-contents .right-text {
+      padding: 0 30px;
+      text-align: center;
+      margin-bottom: 100px; }
+      main .contents .side-job .small-contents .right-text h3 {
+        text-align: center;
+        margin-top: 50px; }
+      main .contents .side-job .small-contents .right-text .text {
+        margin-top: 50px;
+        padding-bottom: 50px; }
+        main .contents .side-job .small-contents .right-text .text p {
+          padding: 30px 20px 0 20px;
+          text-align: left;
+          font-weight: normal;
+          font-size: 12px; }
+    main .contents .side-job .small-contents .button {
+      background-color: #0c1f71;
+      width: 40%;
+      height: 40px;
+      border-bottom: solid 4px #627295; }
+      main .contents .side-job .small-contents .button h4 {
+        color: #fff;
+        font-family: Noto Sans CJK JP;
+        text-align: center;
+        line-height: 35px;
+        font-size: 14px; }
+    main .contents .side-job .small-contents .button:active {
+      /*ボタンを押したとき*/
+      transform: translateY(4px);
+      /*下に動く*/
+      box-shadow: 0px 0px 1px transparent;
+      /*影を小さく*/
+      border-bottom: none; }
+main .contents .journey {
+  width: 100%;
+  display: flex;
+  background-color: #e9f2fb; }
+  main .contents .journey .big-contents {
+    width: 60%;
+    background: url("../images/IMG_2480.png");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    align-items: center; }
+    main .contents .journey .big-contents .journey-text {
+      display: flex;
+      align-items: center;
+      background-color: #3697c9;
+      color: #fff;
+      text-align: center;
+      width: 45%; }
+      main .contents .journey .big-contents .journey-text h1 {
+        font-size: 6vw;
+        font-family: Bradley Hand;
+        text-align: center;
+        font-style: oblique;
+        margin: 0 auto; }
+  main .contents .journey .small-contents {
+    width: 40%;
+    background-color: #fff;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px; }
+    main .contents .journey .small-contents .left-text {
+      padding: 0 30px;
+      text-align: center;
+      margin-bottom: 100px; }
+      main .contents .journey .small-contents .left-text h3 {
+        text-align: center;
+        margin-top: 40px; }
+      main .contents .journey .small-contents .left-text .text {
+        margin-top: 100px;
+        padding-bottom: 50px; }
+        main .contents .journey .small-contents .left-text .text p {
+          padding: 30px 20px 0 20px;
+          text-align: left;
+          font-weight: normal;
+          font-size: 12px; }
+    main .contents .journey .small-contents .button {
+      background-color: #0c1f71;
+      width: 40%;
+      height: 40px;
+      border-bottom: solid 4px #627295; }
+      main .contents .journey .small-contents .button h4 {
+        color: #fff;
+        font-family: Noto Sans CJK JP;
+        text-align: center;
+        line-height: 35px;
+        font-size: 14px; }
+    main .contents .journey .small-contents .button:active {
+      /*ボタンを押したとき*/
+      transform: translateY(4px);
+      /*下に動く*/
+      box-shadow: 0px 0px 1px transparent;
+      /*影を小さく*/
+      border-bottom: none; }
+main .contents .muscle {
+  width: 100%;
+  display: flex;
+  margin-bottom: 100px;
+  background-color: #f3f4f6;
+  background-position: bottom; }
+  main .contents .muscle .big-contents {
+    width: 60%;
+    background: url("../images/bodybuilder-925770_1280.png");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-position: center; }
+    main .contents .muscle .big-contents img {
+      width: 100%;
+      height: 90%;
+      margin-top: -60px; }
+    main .contents .muscle .big-contents .muscle-text {
+      display: flex;
+      align-items: center;
+      background-color: #366bc2;
+      color: #fff;
+      width: 35%; }
+      main .contents .muscle .big-contents .muscle-text h1 {
+        font-size: 6vw;
+        font-family: Bradley Hand;
+        text-align: center;
+        font-style: oblique;
+        margin: 0 auto; }
+  main .contents .muscle .small-contents {
+    width: 35%;
+    background-color: #fff;
+    margin-left: 35px;
+    margin-bottom: 50px; }
+    main .contents .muscle .small-contents .right-text {
+      padding: 0 30px;
+      text-align: center;
+      margin-bottom: 100px; }
+      main .contents .muscle .small-contents .right-text h3 {
+        text-align: center;
+        margin-top: 40px; }
+      main .contents .muscle .small-contents .right-text .text {
+        margin-top: 100px;
+        padding-bottom: 70px;
+        margin-bottom: -2vw; }
+        main .contents .muscle .small-contents .right-text .text p {
+          padding: 30px 20px 0 20px;
+          text-align: left;
+          font-weight: normal;
+          font-size: 12px; }
+    main .contents .muscle .small-contents .button {
+      background-color: #0c1f71;
+      width: 40%;
+      height: 40px;
+      padding-top: -2vw;
+      border-bottom: solid 4px #627295; }
+      main .contents .muscle .small-contents .button h4 {
+        color: #fff;
+        font-family: Noto Sans CJK JP;
+        text-align: center;
+        line-height: 35px;
+        font-size: 14px; }
+    main .contents .muscle .small-contents .button:active {
+      /*ボタンを押したとき*/
+      transform: translateY(4px);
+      /*下に動く*/
+      box-shadow: 0px 0px 1px transparent;
+      /*影を小さく*/
+      border-bottom: none; }
+main .profile .title {
+  text-align: center;
+  margin-bottom: 100px; }
+  main .profile .title h2 {
+    font-size: 25px;
+    font-family: Noto Sans CJK JP; }
+main .profile .container {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  main .profile .container .profile-image {
+    width: 30%;
+    margin-right: 50px; }
+    main .profile .container .profile-image img {
+      width: 100%; }
+  main .profile .container .profile-text {
+    width: 37%;
+    padding-left: 90px; }
+    main .profile .container .profile-text p {
+      font-family: Noto Sans CJK JP;
+      padding-bottom: 20px;
+      font-size: 1.5vw; }
+main .profile .button {
+  background-color: #0c1f71;
+  width: 15%;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-bottom: solid 4px #627295; }
+  main .profile .button h4 {
+    color: #fff;
+    font-family: Noto Sans CJK JP;
+    text-align: center;
+    line-height: 35px;
+    font-size: 0.5rem; }
+main .profile .button:active {
+  /*ボタンを押したとき*/
+  transform: translateY(4px);
+  /*下に動く*/
+  box-shadow: 0px 0px 1px transparent;
+  /*影を小さく*/
+  border-bottom: none; }
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-family: Noto Sans CJK JP;
+  font-style: oblique; }
+  footer .footer-logo {
+    padding-top: 20px;
+    margin-bottom: 20px; }
+    footer .footer-logo h2 {
+      font-size: 24px; }
+  footer .footer-list {
+    margin-bottom: 20px; }
+    footer .footer-list ul {
+      display: flex;
+      justify-content: center; }
+      footer .footer-list ul a {
+        color: #fff; }
+      footer .footer-list ul li {
+        margin-right: 40px; }
+  footer .footer-bottom {
+    padding-bottom: 20px; }
+
+.button {
+  background-color: #0c1f71;
+  width: 25%;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 100px; }
+  .button h4 {
+    color: #fff;
+    font-family: Noto Sans CJK JP;
+    text-align: center;
+    line-height: 35px;
+    font-size: 0.5rem; }
+
+.fadein {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1.5s; }
+
+@media (max-width: 780px) {
+  .pc-only {
+    display: none; }
+
+  .sp-only {
+    display: block; }
+
+  header .header-text {
+    flex-wrap: wrap;
+    height: 70px;
+    z-index: 10;
+    position: fixed; }
+    header .header-text .header-logo {
+      width: 100%;
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+      margin-top: 0;
+      padding-bottom: 5px; }
+      header .header-text .header-logo h1 {
+        font-size: 24px; }
+    header .header-text .header-list {
+      display: block;
+      width: 100%; }
+      header .header-text .header-list .sns {
+        margin-right: 0; }
+        header .header-text .header-list .sns a {
+          margin-left: 0; }
+        header .header-text .header-list .sns .sp-only {
+          margin-right: 0;
+          margin-left: 0; }
+  header .header-image {
+    background-position: center;
+    height: 350px; }
+    header .header-image .header-text {
+      margin-right: 20px; }
+      header .header-image .header-text h1 {
+        font-size: 16px; }
+  header .sns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 110px;
+    margin: 0 auto !important; }
+    header .sns a {
+      margin-left: 15px; }
+    header .sns .sp-only,
+    header .sns .sp-only span {
+      display: inline-block;
+      transition: all .4s;
+      box-sizing: border-box; }
+    header .sns .sp-only {
+      position: relative;
+      margin-left: 25px; }
+      header .sns .sp-only.twitter {
+        width: 24px; }
+      header .sns .sp-only.facebook {
+        width: 22px; }
+      header .sns .sp-only.ham-menu {
+        width: 20px; }
+    header .sns .sp-only span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #555;
+      border-radius: 4px; }
+    header .sns .sp-only span:nth-of-type(1) {
+      top: 0; }
+    header .sns .sp-only span:nth-of-type(2) {
+      top: 8px; }
+    header .sns .sp-only span:nth-of-type(3) {
+      top: 16px; }
+
+  main {
+    overflow: hidden; }
+    main .sponly {
+      background-color: #0c1f71;
+      height: 175px;
+      z-index: 9;
+      position: fixed;
+      top: 70px;
+      width: 100%;
+      display: none; }
+      main .sponly .h-list {
+        width: 92%;
+        height: 32%;
+        text-align: left;
+        margin-left: 20px; }
+        main .sponly .h-list ul {
+          padding-top: 26px; }
+          main .sponly .h-list ul li {
+            width: 100%;
+            margin: 0 auto;
+            height: 90%;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 20px; }
+            main .sponly .h-list ul li a {
+              color: white; }
+    main .contents .side-job {
+      height: auto;
+      flex-direction: column; }
+      main .contents .side-job .big-contents {
+        width: 100%;
+        height: 350px;
+        background-position: center;
+        margin-top: -50px; }
+        main .contents .side-job .big-contents .side-job-text {
+          width: 25vw; }
+      main .contents .side-job .small-contents {
+        width: 100%;
+        margin-left: 0; }
+        main .contents .side-job .small-contents .right-text {
+          margin-top: 0; }
+          main .contents .side-job .small-contents .right-text .text {
+            margin-top: 60px;
+            padding-bottom: 50px; }
+            main .contents .side-job .small-contents .right-text .text p {
+              padding-top: 0; }
+          main .contents .side-job .small-contents .right-text .button {
+            margin-bottom: -50px; }
+            main .contents .side-job .small-contents .right-text .button h4 {
+              font-size: 14px; }
+    main .contents .journey {
+      height: auto;
+      flex-direction: column-reverse; }
+      main .contents .journey .big-contents {
+        width: 100%;
+        height: 350px;
+        background-position: center; }
+        main .contents .journey .big-contents .journey-text {
+          width: 25vw; }
+      main .contents .journey .small-contents {
+        width: 100%;
+        margin-left: 0; }
+        main .contents .journey .small-contents .left-text {
+          margin-top: 0; }
+          main .contents .journey .small-contents .left-text .h3 {
+            margin-top: 0; }
+          main .contents .journey .small-contents .left-text .text {
+            margin-top: 20px; }
+          main .contents .journey .small-contents .left-text .button {
+            margin-bottom: -50px; }
+            main .contents .journey .small-contents .left-text .button h4 {
+              font-size: 14px; }
+    main .contents .muscle {
+      height: auto;
+      flex-direction: column; }
+      main .contents .muscle .big-contents {
+        width: 100%;
+        height: 350px;
+        background-position: center; }
+        main .contents .muscle .big-contents .muscle-text {
+          width: 25%; }
+      main .contents .muscle .small-contents {
+        width: 100%;
+        margin-left: 0; }
+        main .contents .muscle .small-contents .right-text {
+          margin-top: 30px; }
+          main .contents .muscle .small-contents .right-text .text {
+            margin-top: 20px;
+            margin-bottom: -30px; }
+          main .contents .muscle .small-contents .right-text .button {
+            margin-bottom: -50px; }
+            main .contents .muscle .small-contents .right-text .button h4 {
+              font-size: 14px; }
+    main .profile {
+      background-color: #f3f4f6;
+      margin-top: -100px;
+      padding-bottom: 30px; }
+      main .profile .container {
+        flex-direction: column;
+        margin-top: -30px; }
+        main .profile .container .profile-image {
+          width: 100%; }
+        main .profile .container .profile-text {
+          margin-top: 30px;
+          width: 100%;
+          text-align: center;
+          padding-left: 0; }
+          main .profile .container .profile-text p {
+            text-align: left;
+            display: inline-block;
+            font-size: 13px;
+            letter-spacing: 0.5em; }
+      main .profile .button {
+        width: 30%;
+        margin-top: 30px;
+        margin-bottom: 50px; }
+        main .profile .button h4 {
+          font-size: 14px; }
+
+  footer .footer-logo h2 {
+    font-size: 22px; }
+  footer .footer-list ul {
+    display: block; }
+    footer .footer-list ul li {
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: 5px; }
+  footer .footer-bottom h4 {
+    font-size: 4px; } }
+
+/*# sourceMappingURL=style.css.map */

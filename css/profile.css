@@ -1,0 +1,415 @@
+@charset "UTF-8";
+* {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+html, body {
+  height: 100%; }
+
+@media (min-width: 781px) {
+  .sp-only {
+    display: none; } }
+header {
+  background-color: #bebfbf;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  margin-top: -60px; }
+  header .header-text {
+    font-family: しねきゃぷしょん;
+    font-style: oblique;
+    display: flex;
+    justify-content: space-between; }
+    header .header-text .header-logo {
+      display: flex;
+      align-items: center;
+      margin-left: 50px;
+      margin-top: 30px; }
+      header .header-text .header-logo h1 {
+        font-size: 32px; }
+    header .header-text .header-list {
+      display: flex;
+      align-items: center;
+      margin-top: 30px; }
+      header .header-text .header-list ul {
+        display: flex;
+        margin-right: 2vw; }
+        header .header-text .header-list ul a {
+          color: #000; }
+        header .header-text .header-list ul li {
+          margin-right: 3vw; }
+        header .header-text .header-list ul a:hover {
+          color: #fff; }
+      header .header-text .header-list .sns {
+        margin-right: 4vw; }
+        header .header-text .header-list .sns .twitter {
+          margin-right: 2vw; }
+
+main {
+  text-align: center;
+  margin-top: 60px; }
+  main h1 {
+    font-family: Noto Sans CJK JP;
+    margin-bottom: 100px;
+    font-size: 2vw;
+    padding-top: 100px; }
+  main .profile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 220px; }
+    main .profile .profile-image {
+      width: 60%; }
+      main .profile .profile-image img {
+        width: 50%; }
+    main .profile .profile-text {
+      width: 40%;
+      text-align: left; }
+      main .profile .profile-text .prof-text p {
+        margin-bottom: 20px;
+        font-size: 1.5vw; }
+  main .my-life {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px; }
+    main .my-life .hobby {
+      width: 32%;
+      background-color: #ecedee;
+      margin: 0 auto;
+      padding-top: 30px; }
+      main .my-life .hobby h2 {
+        padding-top: 10px;
+        margin-bottom: 50px;
+        font-size: 1.5vw; }
+      main .my-life .hobby img {
+        padding-top: 10px;
+        margin-bottom: 50px; }
+      main .my-life .hobby h3 {
+        padding: 10px 0;
+        margin-bottom: 60px;
+        font-size: 14px;
+        color: #0c1f71;
+        letter-spacing: 3px; }
+      main .my-life .hobby .text {
+        padding-bottom: 50px; }
+        main .my-life .hobby .text p {
+          margin-bottom: -25px;
+          letter-spacing: 5px;
+          font-size: 12px;
+          width: 60%;
+          margin: 0 auto;
+          text-align: left; }
+    main .my-life .skill {
+      width: 32%;
+      background-color: #ecedee;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 30px; }
+      main .my-life .skill h2 {
+        padding-top: 10px;
+        margin-bottom: 50px;
+        font-size: 1.5vw; }
+      main .my-life .skill img {
+        padding-top: 10px;
+        margin-bottom: 50px;
+        padding-right: 20px;
+        padding-left: 20px; }
+      main .my-life .skill .title {
+        padding: 10px 0;
+        margin-bottom: 50px;
+        font-size: 14px; }
+        main .my-life .skill .title h3 {
+          font-size: 14px;
+          color: #0c1f71;
+          letter-spacing: 3px; }
+      main .my-life .skill .text {
+        padding-bottom: 50px; }
+        main .my-life .skill .text p {
+          width: 60%;
+          margin: 0 auto;
+          margin-bottom: -25px;
+          margin-top: -10px;
+          text-align: left;
+          letter-spacing: 5px;
+          font-size: 12px; }
+    main .my-life .SNS {
+      width: 32%;
+      background-color: #ecedee;
+      margin: 0 auto;
+      padding-top: 30px; }
+      main .my-life .SNS h2 {
+        padding-top: 10px;
+        margin-bottom: 60px;
+        font-size: 1.5vw; }
+      main .my-life .SNS img {
+        padding-top: 10px;
+        margin-bottom: 50px;
+        padding-right: 20px;
+        padding-left: 20px; }
+      main .my-life .SNS .title {
+        padding: 10px 0;
+        margin-bottom: 40px;
+        font-size: 14px; }
+        main .my-life .SNS .title h3 {
+          font-size: 14px;
+          color: #0c1f71;
+          letter-spacing: 3px; }
+      main .my-life .SNS .text {
+        padding-bottom: 50px; }
+        main .my-life .SNS .text p {
+          width: 60%;
+          margin: 0 auto;
+          margin-bottom: -25px;
+          text-align: left;
+          letter-spacing: 5px;
+          font-size: 12px; }
+  main .works {
+    font-family: Noto Sans CJK JP; }
+    main .works h2 {
+      margin-bottom: 1px;
+      font-size: 2vw; }
+    main .works p {
+      margin-bottom: 60px;
+      color: #0c1f71; }
+    main .works img {
+      margin-bottom: 60px; }
+    main .works .work-box {
+      margin: 0 auto;
+      background-color: #ecedee;
+      height: 20vw;
+      width: 25vw;
+      margin-bottom: 80px; }
+  main .photo-text h2 {
+    margin-bottom: 1px;
+    font-size: 2vw; }
+  main .photo-text p {
+    margin-bottom: 60px;
+    color: #0c1f71; }
+  main .photogarally {
+    width: 100%;
+    font-family: Noto Sans CJK JP;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    main .photogarally img {
+      width: 45%;
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-bottom: 20px; }
+
+footer {
+  margin-top: 160px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-family: Noto Sans CJK JP;
+  font-style: oblique; }
+  footer .footer-logo {
+    padding-top: 20px;
+    margin-bottom: 20px; }
+    footer .footer-logo h2 {
+      font-size: 24px; }
+  footer .footer-list {
+    margin-bottom: 20px; }
+    footer .footer-list ul {
+      display: flex;
+      justify-content: center; }
+      footer .footer-list ul a {
+        color: #fff; }
+      footer .footer-list ul li {
+        margin-right: 40px; }
+  footer .footer-bottom {
+    padding-bottom: 20px; }
+
+@media (max-width: 780px) {
+  .pc-only {
+    display: none; }
+
+  .sp-only {
+    display: block; }
+
+  header {
+    height: 70px; }
+    header .header-text {
+      flex-wrap: wrap; }
+      header .header-text .header-logo {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 0; }
+        header .header-text .header-logo h1 {
+          font-size: 24px; }
+      header .header-text .header-list {
+        display: block;
+        width: 100%;
+        margin-top: 20px; }
+        header .header-text .header-list .sns {
+          margin-right: 0; }
+          header .header-text .header-list .sns a {
+            margin-left: 0; }
+          header .header-text .header-list .sns .sp-only {
+            margin-right: 0;
+            margin-left: 0; }
+    header .sns {
+      display: flex;
+      justify-content: space-between;
+      max-width: 110px;
+      margin: 0 auto !important; }
+      header .sns a {
+        margin-left: 15px; }
+      header .sns .sp-only,
+      header .sns .sp-only span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box; }
+      header .sns .sp-only {
+        position: relative;
+        margin-left: 25px; }
+        header .sns .sp-only.twitter {
+          width: 24px; }
+        header .sns .sp-only.facebook {
+          width: 22px; }
+        header .sns .sp-only.ham-menu {
+          width: 20px; }
+      header .sns .sp-only span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #555;
+        border-radius: 4px; }
+      header .sns .sp-only span:nth-of-type(1) {
+        top: 0; }
+      header .sns .sp-only span:nth-of-type(2) {
+        top: 8px; }
+      header .sns .sp-only span:nth-of-type(3) {
+        top: 16px; }
+
+  main {
+    overflow: hidden;
+    margin-bottom: -160px;
+    margin-top: 60px; }
+    main h1 {
+      font-size: 24px; }
+    main .sponly {
+      background-color: #0c1f71;
+      height: 175px;
+      z-index: 9;
+      position: absolute;
+      top: 100px;
+      width: 100%;
+      display: none;
+      position: fixed;
+      margin-top: -30px; }
+      main .sponly .h-list {
+        width: 92%;
+        height: 32%;
+        text-align: left;
+        margin-left: 20px; }
+        main .sponly .h-list ul {
+          padding-top: 26px; }
+          main .sponly .h-list ul li {
+            width: 100%;
+            margin: 0 auto;
+            height: 90%;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 20px; }
+            main .sponly .h-list ul li a {
+              color: white; }
+    main .profile {
+      display: block; }
+      main .profile .profile-image {
+        margin-bottom: 60px;
+        margin: 0 auto;
+        padding-bottom: 30px; }
+        main .profile .profile-image img {
+          width: 60%; }
+      main .profile .profile-text {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        text-align: center; }
+        main .profile .profile-text .prof-text p {
+          font-size: 12px;
+          text-align: left;
+          display: inline-block;
+          letter-spacing: 5px;
+          line-height: 20px; }
+    main .my-life {
+      display: block;
+      margin-top: -150px; }
+      main .my-life .hobby {
+        width: 100%;
+        margin-bottom: 50px; }
+        main .my-life .hobby h2 {
+          font-size: 16px; }
+        main .my-life .hobby .sp-hobby {
+          display: flex;
+          text-align: center;
+          margin: 0 auto; }
+          main .my-life .hobby .sp-hobby .mass {
+            width: 55%; }
+          main .my-life .hobby .sp-hobby .text {
+            width: 60%;
+            margin: 0 auto; }
+            main .my-life .hobby .sp-hobby .text p {
+              font-size: 11px;
+              text-align: left; }
+      main .my-life .skill {
+        width: 100%;
+        margin-bottom: 50px; }
+        main .my-life .skill h2 {
+          font-size: 16px; }
+        main .my-life .skill .sp-skill {
+          display: flex; }
+          main .my-life .skill .sp-skill .mass {
+            width: 50%; }
+          main .my-life .skill .sp-skill .text {
+            width: 60%; }
+            main .my-life .skill .sp-skill .text p {
+              font-size: 11px;
+              margin-top: 10px; }
+      main .my-life .SNS {
+        width: 100%;
+        margin-bottom: 50px; }
+        main .my-life .SNS h2 {
+          font-size: 16px; }
+        main .my-life .SNS .sp-sns {
+          display: flex; }
+          main .my-life .SNS .sp-sns .mass {
+            width: 50%; }
+          main .my-life .SNS .sp-sns .text {
+            width: 60%; }
+    main .works {
+      margin-top: -70px; }
+      main .works h2 {
+        font-size: 16px; }
+      main .works .work-box {
+        height: 200px;
+        width: 60%; }
+    main .photogarally img {
+      width: 100%;
+      margin-left: 0; }
+
+  footer .footer-logo h2 {
+    font-size: 22px; }
+  footer .footer-list ul {
+    display: block; }
+    footer .footer-list ul li {
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: 5px; }
+  footer .footer-bottom h4 {
+    font-size: 4px; } }
+
+/*# sourceMappingURL=profile.css.map */
